@@ -41,5 +41,42 @@ Make sure you have the following installed:
 
 1. Clone the repository:
 
-   ```bash
-   git clone https://github.com/your-username/your-repository.git
+  ```bash
+  git clone https://github.com/your-username/your-repository.git
+  ```
+2. Navigate to the project directory:
+
+  ```bash
+  cd spree
+  ```
+3. Build the project:
+
+  ```bash
+  mvn clean install
+  ```
+4. Run the application:
+  ```bash
+  java -jar target/spree.jar
+  ```
+
+5. The application will be accessible at [http://localhost:8080](http://localhost:8080).
+
+## API Endpoints
+
+### Authentication Endpoints
+
+- `POST /api/auth/signup`: Create a new user account.
+- `POST /api/auth/login`: Log in to an existing user account and receive an access token.
+
+### Note Endpoints
+
+- `GET /api/notes`: Get a list of all notes for the authenticated user.
+- `GET /api/notes/{id}`: Get a note by ID for the authenticated user.
+- `POST /api/notes`: Create a new note for the authenticated user.
+- `PUT /api/notes/{id}`: Update an existing note by ID for the authenticated user.
+- `DELETE /api/notes/{id}`: Delete a note by ID for the authenticated user.
+- `POST /api/notes/{id}/share`: Share a note with another user for the authenticated user.
+- `GET /api/search?q={query}`: Search for notes based on keywords for the authenticated user.
+
+
+
