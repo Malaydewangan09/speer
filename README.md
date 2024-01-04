@@ -1,7 +1,5 @@
 # SPEER BACKEND
 
-# Your Project Name
-
 ## Description
 
 This project is a Spring Boot and Java-based API that provides user authentication and note management functionality.
