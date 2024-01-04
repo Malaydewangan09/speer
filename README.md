@@ -1,4 +1,4 @@
-# spree
+# SPREE BACKEND
 
 # Your Project Name
 
